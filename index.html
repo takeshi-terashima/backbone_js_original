@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title>Backbone_sample</title>
+	</head>
+	<body>
+		<section class="shityoapp">
+			<header class="header">
+				<h1>北海道支庁一覧</h1>
+			</header>
+			<section class="main">
+				<ul class="rasult-list"></ul>
+			</section>
+			<a class="return">戻る</a>
+		</section>
+		<script type="text/template" id="shityo-template">
+			<a class="detail"><%- title %></a>
+		</script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="node_modules/underscore/underscore.js"></script>
+		<script src="node_modules/backbone/backbone.js"></script>
+		<script src="js/models/todo.js"></script>
+		<script src="js/collections/todos.js"></script>
+		<script src="js/views/todo-view.js"></script>
+		<script src="js/views/app-view.js"></script>
+		<script src="js/routers/router.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
