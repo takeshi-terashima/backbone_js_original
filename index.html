@@ -10,12 +10,16 @@
 				<h1>北海道支庁一覧</h1>
 			</header>
 			<section class="main">
-				<ul class="rasult-list"></ul>
+				<ul class="shityo-list"></ul>
+				<ul class="shityoson-list"></ul>
 			</section>
 			<a class="return">戻る</a>
 		</section>
 		<script type="text/template" id="shityo-template">
-			<a class="detail"><%- title %></a>
+			<a class="shityo"><%- title %></a>
+		</script>
+		<script type="text/template" id="shityoson-template">
+			<a class="shityoson"><%- title %></a>
 		</script>
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/underscore/underscore.js"></script>

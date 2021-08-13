@@ -11,4 +11,13 @@ var app = app || {};
 			return this;
 		}
 	});
+	app.ShityosonView = Backbone.View.extend({
+		tagName:  'li',
+		template: _.template($('#shityoson-template').html()),
+
+		render: function () {
+			this.$el.html(this.template(this.model.toJSON()));
+			return this;
+		}
+	});
 })(jQuery);

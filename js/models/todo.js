@@ -11,7 +11,6 @@ var app = app || {};
 	app.Shityoson = Backbone.Model.extend({
 		defaults: {
 			title: '',
-			district: 0,
 			shityo: '',
 			url: ''
 		}
